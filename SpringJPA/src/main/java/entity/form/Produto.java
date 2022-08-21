@@ -8,7 +8,7 @@ import lombok.Data;
 //package dio.desafio.codigo.SpringJPA.entity.form;
 @Data
 public class Produto {
-	
+	//Entidade Produto
 	private int idProduto;
 	private String nomeProduto;
 	private String tipo;

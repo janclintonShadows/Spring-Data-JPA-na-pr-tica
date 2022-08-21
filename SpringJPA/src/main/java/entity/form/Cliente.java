@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 public class Cliente {
-	//Nossas entidades
+	//Nossas entidade Cliente
 	private int idCliente;
 	private String numReg;
 	private String nome;

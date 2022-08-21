@@ -8,6 +8,7 @@ import lombok.Data;
 
 @Data
 public class Pedido {
+	//Entidade Pedido
 	private int idPedido;
 	private Cliente cliente;
 	private LocalDate dataPedido;
