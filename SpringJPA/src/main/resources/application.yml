@@ -1,0 +1,11 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/floricultura
+    username: root
+    password: shadows
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    
