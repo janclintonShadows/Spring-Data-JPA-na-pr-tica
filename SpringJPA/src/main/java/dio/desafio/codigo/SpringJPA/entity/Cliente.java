@@ -25,6 +25,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "tb_cliente")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Cliente {
+	//
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //Como vai gerar a a chave primaria, neste caso Auto-Increment
 	private int idCliente;

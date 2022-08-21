@@ -28,7 +28,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "tb_produto")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Produto {
-	
+	//
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idProduto;
@@ -41,7 +41,7 @@ public class Produto {
 	
 	private int qtdEstoque;
 	
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.LAZY)
 	@JsonIgnore //caso de exception de processamento ininito
 	private List<Pedido> pedido = new ArrayList<>();
 }
